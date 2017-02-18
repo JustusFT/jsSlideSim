@@ -1,0 +1,40 @@
+html, body {
+    background-color: #eee;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome and Opera */
+}
+#container {
+    text-align: center;
+    color: #111;
+    padding-top: 16px;
+    font-family: 'Lato', sans-serif;
+}
+#board {
+    display: table;
+    margin: 0 auto;
+    border: 1px solid #111;
+}
+#board > div {
+    display: table-row;
+}
+#timer {
+    font-size: 72px;
+}
+.tile {
+    display: table-cell;
+    width: 96px;
+    height: 96px;
+    font-size: 36px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #111;
+    box-sizing: border-box;
+}
+#empty {
+    background-color: transparent !important;
+}

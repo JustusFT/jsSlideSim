@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jsSlideSim</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="main.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="vendors/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="container">
+            <button onclick="scramble()">Scramble</button>
+            <button onclick="generateBoard()">Reset</button>
+            <button onclick="changeBoardSize('width', -1)">-</button>
+            <span id="boardWidth">4</span>
+            <button onclick="changeBoardSize('width', 1)">+</button>
+            <button onclick="changeBoardSize('height', -1)">-</button>
+            <span id="boardHeight">4</span>
+            <button onclick="changeBoardSize('height', 1)">+</button>
+            <button onclick="resetTimes()">Reset Times</button>
+            <select id="colorScheme" onchange="generateBoard()">
+                <option value="lbl" selected>LBL</option>
+                <option value="l2l">L2L</option>
+                <option value="fringe">Fringe</option>
+            </select>
+            <div id="board"></div>
+            <div id="timer">0.00</div>
+            <div><b>Times:</b> <span id="times"></span></div>
+            <div id="timeStats">
+
+            </div>
+        </div>
+    </body>
+</html>
